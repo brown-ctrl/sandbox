@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- TYPES OF INPUTS: 
+        text, longtext, select, email, number, checkbox, radio, fileupload, submit, date, password
+    -->
+  </head>
+  <body>
+    <nav>
+      <div>
+        <a href="login.html">Student login</a>
+      </div>
+    </nav>
+    <main>
+      <form>
+        <h1>Registration Form</h1>
+
+        <div>
+          <label for="firstName" name="firstName">First Name</label>
+          <input type="text" placeholder="Enter your first name" />
+        </div>
+
+        <div>
+          <label for="lastName" name="lastName">Last Name</label>
+          <input type="text" placeholder="Enter your last name" />
+        </div>
+
+        <div>
+          <label for="email" name="email">Email</label>
+          <input type="email" placeholder="Enter your email address" />
+        </div>
+
+        <div>
+          <label for="mobileNumber" name="mobileNumber">Mobile Number</label>
+          <input type="tel" placeholder="Enter your mobile number" />
+        </div>
+
+        <div>
+          <label for="gender">Gender</label>
+          <input type="radio" value="Male" name="gender" />Male
+          <input type="radio" value="Female" name="gender" />Female
+        </div>
+
+        <div>
+          <label for="dob">Date of Birth</label>
+          <input type="date" name="dob" />
+        </div>
+
+        <div>
+          <label for="adderss">Address</label>
+          <textarea name="address" rows="5"></textarea>
+        </div>
+
+        <div>
+          <label for="city">City</label>
+          <input type="text" name="city" placeholder="Enter your city" />
+        </div>
+
+        <div>
+          <label for="areaPin">Area PIN</label>
+          <input
+            type="number"
+            name="areaPin"
+            placeholder="Enter your Area PIN"
+          />
+        </div>
+
+        <div>
+          <label for="country">Country</label>
+          <select name="country">
+            <option value="" hidden>Select Country</option>
+            <option value="Nigeria">Nigeria</option>
+            <option value="Ghana">Ghana</option>
+            <option value="Togo">Togo</option>
+            <option value="Qatar">Qatar</option>
+            <option value="UAE">UAE</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="state">State</label>
+          <select name="state">
+            <option value="" hidden>Select State</option>
+            <option value="FCT">FCT</option>
+            <option value="Lagos">Lagos</option>
+            <option value="Rivers">Rivers</option>
+            <option value="Kano">Kano</option>
+            <option value="Kaduna">Kaduna</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="qualification">Qualification</label>
+          <input
+            type="text"
+            name="qualification"
+            placeholder="Enter your Qualification"
+          />
+        </div>
+
+        <div class="specializations">
+          <label for="specializations">Specializations</label>
+          <div>
+            <div>
+              <input
+                type="checkbox"
+                name="specializations"
+                value="computer_science"
+              />Computer Science
+            </div>
+
+            <div>
+              <input
+                type="checkbox"
+                name="specializations"
+                value="information_technology"
+              />
+              Information Technology
+            </div>
+
+            <div>
+              <input
+                type="checkbox"
+                name="specializations"
+                value="computer_architecture"
+              />Computer Architecture
+            </div>
+
+            <div>
+              <input
+                type="checkbox"
+                name="specializations"
+                value="telecommunications"
+              />Telecommunications
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <label for="password">password</label>
+          <input type="password" name="password" />
+        </div>
+
+        <button style="font-family: 'Poppins', sans-serif">Register</button>
+      </form>
+    </main>
+  </body>
+</html>

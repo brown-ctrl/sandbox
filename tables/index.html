@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=tabeta, initial-scale=1.0" />
+    <title>Table</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,600&display=swap');
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            background-image: linear-gradient(
+                90deg,
+                pink,
+                #ff00ff
+            );
+            font-family: 'Poppins', sans-serif;
+        }
+
+        table {
+            border: 1px solid #000;
+            border-radius: 15px 15px 0 0;
+            border-spacing: 0;
+            overflow: hidden;
+            width: 60%;
+            box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+
+        }
+
+        thead {
+            /* border-radius: 20px 20px 0 0; */
+            background-color: #c200c9;
+        }
+
+        th {
+            padding: 5px 10px;
+            color: #fff;
+            text-transform: uppercase;
+            font-size: 16px;
+            padding: 10px;
+            text-align: center;
+            
+        }
+        tbody {
+            background-color: white;
+        }
+
+        tbody tr:nth-child(odd){
+            background-color: #ddd;
+        }
+ 
+        td {
+            font-size: 14px;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+  </head>
+  <body>
+    <h1>HTML Table</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>S/N</th>
+          <th>Name</th>
+          <th>E-mail address</th>
+          <th>Phone</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+            <td>1</td>
+            <td>Toun</td>
+            <td>toun@i-academy.org</td>
+            <td>08012345678</td>
+          </tr>
+
+        <tr>
+          <td>2</td>
+          <td>Precious</td>
+          <td>precious@i-academy.org</td>
+          <td>08101234567</td>
+        </tr>
+
+        <tr>
+          <td>3</td>
+          <td>Taiwo</td>
+          <td>taiwo.raji@i-academy.org</td>
+          <td>08012345678</td>
+        </tr>
+
+        <tr>
+            <td>4</td>
+            <td>Brown</td>
+            <td>brown.memoye@i-academy.org</td>
+            <td>08012345678</td>
+          </tr>
+
+          <tr>
+            <td>5</td>
+            <td>Toyin</td>
+            <td>toyin@i-academy.org</td>
+            <td>08012345678</td>
+          </tr>
+
+          <tr>
+            <td>5</td>
+            <td>Waliyah</td>
+            <td>waliyah@i-academy.org</td>
+            <td>08012345678</td>
+          </tr>
+
+          <tr>
+            <td>6</td>
+            <td>Toyin</td>
+            <td>toyin@i-academy.org</td>
+            <td>08012345678</td>
+          </tr>
+
+          <tr>
+            <td>7</td>
+            <td>Damola</td>
+            <td>damola@i-academy.org</td>
+            <td>08012345678</td>
+          </tr>
+
+          <tr>
+            <td>8</td>
+            <td>Akinwale</td>
+            <td>akinwale@i-academy.org</td>
+            <td>08012345678</td>
+          </tr>
+
+          <tr>
+            <td>9</td>
+            <td>Theophilus</td>
+            <td>theophilus@i-academy.org</td>
+            <td>08012345678</td>
+          </tr>
+
+          <tr>
+            <td>10</td>
+            <td>Olanrewaju</td>
+            <td>olanrewaju@i-academy.org</td>
+            <td>08012345678</td>
+          </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

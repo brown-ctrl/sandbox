@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+body {
+  background-color: cyan;
+  font-family: "Poppins", sans-serif;
+}
+
+main {
+  width: 1000px;
+  margin: auto;
+}
+
+nav {
+  background-color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+nav div {
+  margin: auto;
+  text-align: right;
+  width: 1000px;
+}
+
+nav a {
+  text-decoration: none;
+  color: rgb(0, 0, 100);
+}
+nav a:hover {
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+form {
+  margin-top: 30px;
+}
+
+form h1 {
+  text-align: center;
+}
+
+form div label {
+  width: 12%;
+
+  /* labels have inline display by default. 
+     this won't allow for setting width 
+     so we change the display to inline-block(next line)
+    */
+
+  display: inline-block;
+  font-weight: 700;
+}
+
+form div {
+  margin-bottom: 10px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="number"],
+form input[type="tel"],
+form input[type="password"],
+form input[type="date"],
+textarea,
+select 
+ {
+  width: 80%;
+  height: 35px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.specializations {
+  display: flex;
+}
