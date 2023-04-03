@@ -1,20 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="loginBody">
     <main>
-        <nav>
-            <a href="index.html">Student Registration</a>
-        </nav>
-        <form>
-            <input type="text">
-        </form>
+      
+      <form class="loginForm">
+        <h1>Student Login</h1>
+        <div>
+          <label for="emailAddress">Email address</label>
+          <input
+            type="email"
+            name="emailAddress"
+            placeholder="Enter you email address"
+          />
+        </div>
+
+        <div>
+          <label for="password">Password</label>
+          <input type="password" name="password" />
+        </div>
+
+        <div class="submitArea">
+            <input type="submit" value="Login" />
+            
+          </div>
+          <p>
+            Don't have an account? 
+           <a href="index.html"> Register</a>
+         </p>
+      </form>
+      
     </main>
-</body>
+  </body>
 </html>

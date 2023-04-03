@@ -11,13 +11,8 @@
     -->
   </head>
   <body>
-    <nav>
-      <div>
-        <a href="login.html">Student login</a>
-      </div>
-    </nav>
     <main>
-      <form>
+      <form class="regForm">
         <h1>Registration Form</h1>
 
         <div>
@@ -40,10 +35,12 @@
           <input type="tel" placeholder="Enter your mobile number" />
         </div>
 
-        <div>
+        <div class="genderDiv">
           <label for="gender">Gender</label>
-          <input type="radio" value="Male" name="gender" />Male
-          <input type="radio" value="Female" name="gender" />Female
+          <div class="genderInputs">
+            <input type="radio" value="Male" name="gender" />Male
+            <input type="radio" value="Female" name="gender" />Female
+          </div>
         </div>
 
         <div>
@@ -52,7 +49,7 @@
         </div>
 
         <div>
-          <label for="adderss">Address</label>
+          <label for="address">Address</label>
           <textarea name="address" rows="5"></textarea>
         </div>
 
@@ -70,8 +67,8 @@
           />
         </div>
 
-        <div>
-          <label for="country">Country</label>
+        <div class="specDiv">
+          <label for="country" class="countrylabel">Country</label>
           <select name="country">
             <option value="" hidden>Select Country</option>
             <option value="Nigeria">Nigeria</option>
@@ -82,8 +79,8 @@
           </select>
         </div>
 
-        <div>
-          <label for="state">State</label>
+        <div class="specDiv">
+          <label for="state" class="statelabel">State</label>
           <select name="state">
             <option value="" hidden>Select State</option>
             <option value="FCT">FCT</option>
@@ -103,9 +100,9 @@
           />
         </div>
 
-        <div class="specializations">
+        <div class="specDiv">
           <label for="specializations">Specializations</label>
-          <div>
+          <div class="checkboxDiv">
             <div>
               <input
                 type="checkbox"
@@ -119,8 +116,7 @@
                 type="checkbox"
                 name="specializations"
                 value="information_technology"
-              />
-              Information Technology
+              />Information Technology
             </div>
 
             <div>
@@ -142,11 +138,17 @@
         </div>
 
         <div>
-          <label for="password">password</label>
+          <label for="password">Password</label>
           <input type="password" name="password" />
         </div>
-        <input type="submit" value="Register" style="font-family: 'Poppins', sans-serif">
 
+        <div class="submitArea">
+          <input type="submit" value="Register" />
+        </div>
+        <p>
+          Already have an account?
+          <a href="login.html">Login</a>
+        </p>
       </form>
     </main>
   </body>
